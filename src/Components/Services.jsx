@@ -37,7 +37,7 @@ function Services() {
                 fontWeight: 700
               }} variant="h2" component="h1" ref={textRef}>{serve.serviceName}</Typography>
             </Grid>
-            <Grid item sx={12} md={4}>
+            <Grid item sx={12} md={4} >
               <Typography variant="b0dy2">
                 {serve.serviceList}
               </Typography>

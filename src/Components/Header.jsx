@@ -13,7 +13,8 @@ function Header() {
           position: "absolute",
           top: 0,
           right: 0,
-          padding: "1rem"
+          padding: "1rem",
+          
         }
       }>REMIX</Typography>
         <Box p={10} height="100%" sx={{
@@ -24,7 +25,8 @@ function Header() {
         }}>
         <img src={Logo} alt='Logo' style={{
           width: '100%',
-          marginBottom: "1rem"
+          marginBottom: "1rem",
+          zIndex: "99"
         }} />
         <Typography variant='h6' textAlign="center">Cultivating the art of storytelling to build brands</Typography>
         </Box>

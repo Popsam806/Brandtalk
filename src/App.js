@@ -15,9 +15,10 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Spline scene="https://prod.spline.design/SyN0pZF-50T8eGUK/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/SyN0pZF-50T8eGUK/scene.splinecode" style={{
+        position: "absolute",
+      }}/>
       <Header />
-      {/* <Spline /> */}
       <Services />
       <OurWork />
     </div>
