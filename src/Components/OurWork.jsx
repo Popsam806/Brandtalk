@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./Styles.css";
+import WorkImg from "./OurWorkImg";
 
 // import required modules
 import {
@@ -23,7 +24,10 @@ export default function Carousel() {
   return (
     <Box
       minHeight="100vh"
-      p={10}
+      p={{
+        sx: 3,
+        md: 10,
+      }}
       sx={{
         background: "linear-gradient(to bottom, lightgrey, grey)",
       }}
@@ -66,13 +70,21 @@ export default function Carousel() {
         modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          
-        </SwiperSlide>
-        <SwiperSlide>
+        {WorkImg.map((ourWork) => (
+          <SwiperSlide key={ourWork.id}>
+            <img src={ourWork.imgUrl} height={"100%"} />
+            <Typography variant="h6" sx={{
+              position: "absolute",
+              bottom: "0",
+              left: "0",
+              margin: "1rem",
+              color: "#fff"
+            }}>{ourWork.title}</Typography>
+          </SwiperSlide>
+        ))}
+
+        {/* <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
@@ -94,8 +106,7 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
-        
+        </SwiperSlide> */}
       </Swiper>
     </Box>
   );
