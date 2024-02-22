@@ -23,9 +23,9 @@ import {
 export default function Carousel() {
   return (
     <Box
-      minHeight="100vh"
+      Height="100vh"
       p={{
-        sx: 3,
+        xs: 3,
         md: 10,
       }}
       sx={{
@@ -35,47 +35,53 @@ export default function Carousel() {
       <Typography variant="h4" fontWeight={600} textAlign="center" gutterBottom>
         OUR WORK
       </Typography>
-      <Swiper
-        effect={"coverflow"}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        cssMode={true}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-          slideShadows: true,
-        }}
-        navigation={true}
-        loop={true}
-        pagination={{ clickable: true }}
-        modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}
-        className="mySwiper"
-      >
-        {WorkImg.map((ourWork) => (
-          <SwiperSlide key={ourWork.id}>
-            <img src={ourWork.imgUrl} height={"100%"} />
-            <Typography
-              variant="h6"
-              sx={{
-                position: "absolute",
-                bottom: "0",
-                left: "0",
-                margin: "1rem",
-                color: "#fff",
-              }}
-            >
-              {ourWork.title}
-            </Typography>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <Box sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }}>
+        <Swiper
+          effect={"coverflow"}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          cssMode={true}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            slideShadows: true,
+          }}
+          navigation={true}
+          loop={true}
+          pagination={{ clickable: true }}
+          modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}
+          className="mySwiper"
+        >
+          {WorkImg.map((ourWork) => (
+            <SwiperSlide key={ourWork.id}>
+              <img src={ourWork.imgUrl} height={"100%"} />
+              <Typography
+                variant="h6"
+                sx={{
+                  position: "absolute",
+                  bottom: "0",
+                  left: "0",
+                  margin: "1rem",
+                  color: "#fff",
+                }}
+              >
+                {ourWork.title}
+              </Typography>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Box>
     </Box>
   );
 }

@@ -5,7 +5,7 @@ import Nav from "./Nav";
 
 function Header() {
   return (
-    <Box height="100vh" bgcolor="lightgrey">
+    <Box height="100vh">
       <Typography
         variant="h5"
         fontWeight={600}
@@ -26,8 +26,8 @@ function Header() {
           alignItems: "center",
           justifyContent: "center",
           padding: {
-            sx: "5rem",
-            md: "10rem",
+            xs: "2rem",
+            md: "8rem",
           }
         }}
       >

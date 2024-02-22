@@ -3,27 +3,52 @@ import React from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect } from "react";
-gsap.registerPlugin(ScrollTrigger);
+import ScrollReveal from "scrollreveal";
+import "./Service.css";
+// gsap.registerPlugin(ScrollTrigger);
 
 function Services() {
-  const textRef = useRef();
-  useEffect(() => {
-    const text = textRef.current;
-    // gsap.fromTo(text, {rotation: 180, duration: 5, scrollTrigger: {
-    //   trigger: text
-    // }})
-  }, []);
+  const ServiceName = ({ children }) => {
+    const textRef = useRef();
 
+    useEffect(() => {
+      ScrollReveal().reveal(textRef.current, {
+        origin: "bottom",
+        distance: "1.25rem",
+        duration: 1000,
+        reset: true,
+        delay: 200,
+        easing: "cubic-bezier(0.5, 0, 0, 1)",
+      });
+    }, []);
+
+    return <div ref={textRef}>{children}</div>;
+  };
+  const ServiceList = ({ children }) => {
+    const listRef = useRef();
+
+    useEffect(() => {
+      ScrollReveal().reveal(listRef.current, {
+        opacity: 0.2,
+        duration: 1000,
+        reset: true,
+        delay: 200,
+        easing: "cubic-bezier(0.5, 0, 0, 1)",
+      });
+    }, []);
+
+    return <div ref={listRef}>{children}</div>;
+  };
   return (
     <Box
       minHeight="100vh"
       bgcolor="lightgrey"
       pl={{
-        sx: 5,
+        xs: 2,
         md: 10,
       }}
       pr={{
-        sx: 5,
+        xs: 2,
         md: 10,
       }}
       pt={5}
@@ -38,28 +63,35 @@ function Services() {
             container
             spacing={2}
             sx={{
-              "&:hover": {
-                background: "grey",
-              },
               padding: "0.625rem",
               display: "flex",
               alignItems: "center",
             }}
+            className="service-grid"
           >
             <Grid item sx={12} md={8}>
-              <Typography
-                sx={{
-                  fontWeight: 700,
-                }}
-                variant="h2"
-                component="h1"
-                ref={textRef}
-              >
-                {serve.serviceName}
-              </Typography>
+              <ServiceName>
+                <Typography
+                  sx={{
+                    fontWeight: 700,
+                    fontSize: {
+                      xs: "2.1875rem",
+                      md: "3.4375rem",
+                    },
+                  }}
+                  variant="h2"
+                  component="h1"
+                >
+                  {serve.serviceName}
+                </Typography>
+              </ServiceName>
             </Grid>
             <Grid item sx={12} md={4}>
-              <Typography variant="b0dy2">{serve.serviceList}</Typography>
+              <ServiceList>
+                <Typography variant="b0dy2" className="service-list">
+                  {serve.serviceList}
+                </Typography>
+              </ServiceList>
             </Grid>
           </Grid>
         ))}

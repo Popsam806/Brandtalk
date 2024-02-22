@@ -1,0 +1,24 @@
+.service-list {
+  visibility: hidden;
+  
+}
+.service-grid:hover .service-list {
+  visibility: visible;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+.service-grid:hover {
+  background: grey;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+.service-grid {
+    padding: 0;
+    margin: 0;
+}
