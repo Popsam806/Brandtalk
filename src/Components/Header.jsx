@@ -19,16 +19,16 @@ function Header() {
         REMIX
       </Typography>
       <Box
-        p={{
-          sx: 5,
-          md: 10,
-        }}
         height="100%"
         sx={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          padding: {
+            sx: "5rem",
+            md: "10rem",
+          }
         }}
       >
         <img
