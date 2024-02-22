@@ -1,4 +1,5 @@
 body {
-    color: #0c0c0c
-    
+  /* color: "#fff" !important; */
+  /* background: linear-gradient(to bottom, lightgrey, grey); */
+  background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
 }

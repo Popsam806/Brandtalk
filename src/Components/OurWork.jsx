@@ -28,11 +28,9 @@ export default function Carousel() {
         xs: 3,
         md: 10,
       }}
-      sx={{
-        background: "linear-gradient(to bottom, lightgrey, grey)",
-      }}
+      
     >
-      <Typography variant="h4" fontWeight={600} textAlign="center" gutterBottom>
+      <Typography variant="h4" fontWeight={600} textAlign="center" gutterBottom color="#fff">
         OUR WORK
       </Typography>
       <Box sx={{

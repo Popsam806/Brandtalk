@@ -42,7 +42,7 @@ function Services() {
   return (
     <Box
       minHeight="100vh"
-      bgcolor="lightgrey"
+      color="#fff"
       pl={{
         xs: 2,
         md: 10,

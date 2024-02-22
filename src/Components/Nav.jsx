@@ -9,6 +9,7 @@ function Nav() {
       style={{
         padding: "1rem 2rem",
         position: "absolute",
+        color: "#fff"
       }}
     >
       <MoreVert />

@@ -8,6 +8,7 @@ function Header() {
     <Box height="100vh">
       <Typography
         variant="h5"
+        color="#fff"
         fontWeight={600}
         sx={{
           position: "absolute",
@@ -40,7 +41,7 @@ function Header() {
             zIndex: "99",
           }}
         />
-        <Typography variant="h6" textAlign="center" zIndex={"99"}>
+        <Typography variant="h6" textAlign="center" zIndex={"99"} color="#fff">
           Cultivating the art of storytelling to build brands
         </Typography>
       </Box>

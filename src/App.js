@@ -27,7 +27,6 @@ function App() {
       <Spline onScroll={handleWheel} scene="https://prod.spline.design/SyN0pZF-50T8eGUK/scene.splinecode" style={{
         position: "absolute",
         zIndex: -1,
-        background: "lightgrey"
 
       }} onLoad={zoom_scroll} />
       <Header />
