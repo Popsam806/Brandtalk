@@ -42,7 +42,4 @@
   .service-list {
     visibility: visible;
   }
-  .service-grid:hover {
-    background:linear-gradient(180deg, #130f40 25%, #0a0a0a 74%);
-  }
 }
