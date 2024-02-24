@@ -1,19 +1,22 @@
 import React from "react";
 import { MoreVert } from "@mui/icons-material";
 
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 function Nav() {
   return (
-    <div
-      style={{
-        padding: "1rem 2rem",
+    <Box
+      sx={{
+        padding: {
+          xs: "1rem",
+          md: "1rem 2rem",
+        },
         position: "absolute",
-        color: "#fff"
+        color: "#fff",
       }}
     >
       <MoreVert />
-    </div>
+    </Box>
   );
 }
 

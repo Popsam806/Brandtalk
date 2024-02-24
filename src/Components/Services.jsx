@@ -13,7 +13,7 @@ function Services() {
 
     useEffect(() => {
       ScrollReveal().reveal(textRef.current, {
-        origin: "bottom",
+        origin: "top",
         distance: "1.25rem",
         duration: 1000,
         reset: true,
@@ -44,26 +44,29 @@ function Services() {
       minHeight="100vh"
       color="#fff"
       pl={{
-        xs: 2,
+        xs: 0,
         md: 10,
       }}
       pr={{
-        xs: 2,
+        xs: 0,
         md: 10,
       }}
       pt={5}
       pb={5}
+      sx={{
+        margin: 0,
+      }}
     >
       <Typography variant="h4" fontWeight={600} textAlign="center" gutterBottom>
         SERVICES
       </Typography>
-      <Box spacing={2}>
+      <Box>
         {services.map((serve) => (
           <Grid
             container
-            spacing={2}
+            // spacing={2}
             sx={{
-              padding: "0.625rem",
+              padding: "1.5rem",
               display: "flex",
               alignItems: "center",
             }}

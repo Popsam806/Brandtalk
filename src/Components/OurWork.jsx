@@ -23,26 +23,47 @@ import {
 export default function Carousel() {
   return (
     <Box
-      Height="100vh"
+      height="100vh"
       p={{
         xs: 3,
         md: 10,
       }}
-      
     >
-      <Typography variant="h4" fontWeight={600} textAlign="center" gutterBottom color="#fff">
+      <Typography
+        variant="h4"
+        fontWeight={600}
+        textAlign="center"
+        gutterBottom
+        color="#fff"
+      >
         OUR WORK
       </Typography>
-      <Box sx={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
-      }}>
+      <Box
+        sx={{
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Swiper
           effect={"coverflow"}
           autoplay={{
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false,
+          }}
+          breakpoints={{
+            0: {
+              autoplay: {
+                enabled: false,
+              },
+              slidesPerView: 1,
+            },
+            768: {
+              autoplay: {
+                enabled: true,
+              },
+            },
           }}
           cssMode={true}
           grabCursor={true}
@@ -70,7 +91,10 @@ export default function Carousel() {
                   position: "absolute",
                   bottom: "0",
                   left: "0",
-                  margin: "1rem",
+                  margin: {
+                    xs: "2rem",
+                    md: "1rem"
+                  },
                   color: "#fff",
                 }}
               >
