@@ -84,6 +84,7 @@ function Services() {
                   }}
                   variant="h2"
                   component="h1"
+                  className="service-name"
                 >
                   {serve.serviceName}
                 </Typography>
