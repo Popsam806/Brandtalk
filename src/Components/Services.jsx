@@ -109,37 +109,37 @@ const services = [
     id: 1,
     serviceName: "SOCIAL MEDIA",
     serviceList:
-      "Social Media Strategy, Social Media Strategy, Social Media Strategy, Social Media Strategy",
+      "Social Media Strategy, Social Media Consultancy, Account setup and optimization, Calendar management, Performance tracking and monitoring, Community management, Campaign management, Analytics and perfomance tracking",
   },
   {
     id: 2,
     serviceName: "PUBLIC RELATIONS",
     serviceList:
-      "Social Media Strategy, Social Media Strategy, Social Media Strategy, Social Media Strategy",
+      "Public relations strategy, Media outreach, Press releases, Crisi and reputation management, Event planning and execution, Brand Lanches, Media events and press trips",
   },
   {
     id: 3,
     serviceName: "MARKETING",
     serviceList:
-      "Social Media Strategy, Social Media Strategy, Social Media Strategy, Social Media Strategy",
+      "Marketing campaign planningn and execution, Develop innovative exhebition spaces, Brand development and positioning, Marketing strategy development, Market research, identification and segmentation, Email marketing, Strategic partnerships",
   },
   {
     id: 4,
     serviceName: "INFLUENCER MARKETING",
     serviceList:
-      "Social Media Strategy, Social Media Strategy, Social Media Strategy, Social Media Strategy",
+      "Influencer management, Brand ambassador programs, Influencer research and outreach, Influencer brand trips",
   },
   {
     id: 5,
     serviceName: "CONTENT CREATION",
     serviceList:
-      "Social Media Strategy, Social Media Strategy, Social Media Strategy, Social Media Strategy",
+      "Content stsartegy & visual creation, Storyboard planning & execution, Videography and photography, Event graphics, Photo shoot planning and execution",
   },
   {
     id: 6,
     serviceName: "DIGITAL ADVERTISER",
     serviceList:
-      "Social Media Strategy, Social Media Strategy, Social Media Strategy, Social Media Strategy",
+      "Social media ads, Google and set up Optimization, Keyword research and analysis, Pay-per-click (PPC) advertising campaigns, Copywriting and creative development, Perfomance analysis and conversion tracking, Monitoring and Optimization",
   },
 ];
 

@@ -25,7 +25,7 @@ export default function Carousel() {
     <Box
       height="100vh"
       p={{
-        xs: 3,
+        xs:  3,
         md: 10,
       }}
     >
