@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./Styles.css";
-import WorkImg from "./OurWorkImg";
+import {WorkImg} from "./OurWorkImg";
 
 // import required modules
 import {

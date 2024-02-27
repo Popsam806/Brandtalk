@@ -6,6 +6,7 @@ import OurWork from './Components/OurWork';
 import Slick from './Components/Slick';
 import "./App.css"
 import Spline from '@splinetool/react-spline';
+import Client from './Components/Client';
 
 function zoom_scroll(spline) {
 
@@ -31,6 +32,7 @@ function App() {
       }} onLoad={zoom_scroll} />
       <Header />
       <Services />
+      <Client />
       <OurWork />
     </div>
   );
